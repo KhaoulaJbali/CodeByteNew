@@ -20,5 +20,7 @@ database mysql : coderbyte.sql
 --------postman collection-------------
 coderbyte.postman_collection.json
 coderbyte.postman_collectionv2.json
+----------------jar file -----
+./target/coderbyte-0.0.1-SNAPSHOT.jar
 
 
