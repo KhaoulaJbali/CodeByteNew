@@ -1,0 +1,120 @@
+{
+	"variables": [],
+	"info": {
+		"name": "coderbyte",
+		"_postman_id": "d98c5c33-9a11-62f6-49e4-48935953bde6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signin",
+			"request": {
+				"url": "http://localhost:8080/api/auth/signin",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n \"username\":\"admin\",\r\n \"password\":\"123\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addUserDetail",
+			"request": {
+				"url": "http://localhost:8080/api/auth/signup",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 1,\r\n        \"username\": \"admin\",\r\n        \"email\": \"test@gmail.com\",\r\n        \"password\": \"123\"\r\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getAllUsers",
+			"request": {
+				"url": "http://localhost:8080/test/users/all",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2Nzc0MTcxNSwiZXhwIjoxNjY3ODI4MTE1fQ.gIxJn3NjeIgtMQYPJ5z9cv3p7OQ1lt75LSRMjuIF91PKxiXVKaAN5G9dH6fZsCI5iqPP30PW_E7TuIeZWuw_oQ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n \"username\":\"test4\",\r\n \"password\":\"1234\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPosts",
+			"request": {
+				"url": "http://localhost:8080/test/post/all",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTY2Nzc0MTcxNSwiZXhwIjoxNjY3ODI4MTE1fQ.gIxJn3NjeIgtMQYPJ5z9cv3p7OQ1lt75LSRMjuIF91PKxiXVKaAN5G9dH6fZsCI5iqPP30PW_E7TuIeZWuw_oQ",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n \"username\":\"test4\",\r\n \"password\":\"1234\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getAllComments",
+			"request": {
+				"url": "http://localhost:8080/test/comment/all",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJEci4gQW1yaXQgS2hhbiIsImlhdCI6MTY2NzcyNzY2NSwiZXhwIjoxNjY3ODE0MDY1fQ.8-DCMSjYVr0d0_r3adZju4TW-S1ee9fz_vzuTk2xOHNwzNIQMwtnnqL6rkj1jyNMvXJIa17R3jge9vd8n9-TNw",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
